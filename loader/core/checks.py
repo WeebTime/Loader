@@ -27,7 +27,7 @@ def _git() -> None:
 
 
 def _py_version() -> None:
-    log(f"\tFound PYTHON - v{py_ver}.{sys.version_info[2]} ...")
+    pass
 
 
 def _config_file() -> None:
