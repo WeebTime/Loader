@@ -27,18 +27,6 @@ def _git() -> None:
 
 
 def _py_version() -> None:
-    log("Checking Python Version ...")
-
-    py_ver = sys.version_info[0] + sys.version_info[1] / 10
-
-    if py_ver < MIN_PY:
-        error(f"You MUST have a python version of at least {MIN_PY}.0 !",
-              "upgrade your python version")
-
-    if py_ver > MAX_PY:
-        error(f"You MUST have a python version of at most {MAX_PY} !",
-              "downgrade your python version")
-
     log(f"\tFound PYTHON - v{py_ver}.{sys.version_info[2]} ...")
 
 
